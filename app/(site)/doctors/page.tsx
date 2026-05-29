@@ -24,17 +24,17 @@ const doctors = [
         color: '#000000',
     },
     {
-        name: 'Пушкарский Владислав Васильевич',
-        role: 'Стоматолог-хирург',
-        description: 'Стаж: с 2018 г.',
+        name: 'Труфанова Мария Сергеевна',
+        role: 'Стоматология детская',
+        description: 'Стаж: с 2009 г.',
         image: '/images/doctor2.jpg',
-        color: '#FFFFFF',
+        color: '#000000',
     },
 ];
 
 export default function DoctorsPage() {
     return (
-        <section className='mx-auto max-w-screen-lg px-4 pt-24 pb-12'>
+        <section className='mx-auto max-w-5xl px-4 pt-24 pb-12'>
             <h1 className='mb-4 text-3xl md:text-4xl font-bold text-center'>
                 Наши врачи
             </h1>

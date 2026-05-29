@@ -11,7 +11,7 @@ type PriceTable = { title: string; rows: PriceRow[] };
 
 const tables: PriceTable[] = [
     {
-        title: 'Приёмы',
+        title: 'Приём',
         rows: [
             { service: 'Первичный прием ортодонта', price: '1 500' },
             {
@@ -130,8 +130,8 @@ const tables: PriceTable[] = [
     {
         title: 'Ортодонтические аппараты',
         rows: [
-            { service: 'Ортодонтический аппарат стандартный', price: '45 000' },
-            { service: 'Ортодонтический аппарат сложный', price: '70 000' },
+            { service: 'Ортодонтический аппарат стандартный', price: '45 000', photo: '/images/prices/ortho-device-standard.jpeg' },
+            { service: 'Ортодонтический аппарат сложный', price: '70 000', photo: '/images/prices/ortho-device-complex.jpeg' },
         ],
     },
     {
@@ -153,8 +153,8 @@ const tables: PriceTable[] = [
     {
         title: 'Минивинты',
         rows: [
-            { service: 'Минивинт стандартный', price: '15 000' },
-            { service: 'Минивинт сложный', price: '20 000' },
+            { service: 'Минивинт стандартный', price: '15 000', photo: '/images/prices/miniscrew-standard.jpeg' },
+            { service: 'Минивинт сложный', price: '20 000', photo: '/images/prices/miniscrew-complex.jpeg' },
             { service: 'Минивинт повторный', price: '5 000' },
             { service: 'Удаление минивинта', price: '5 000' },
         ],
@@ -238,7 +238,8 @@ export function OrthoPrice() {
                                                     />
                                                 </button>
                                             )}
-                                            {row.service}
+                                            <span className='md:hidden' dangerouslySetInnerHTML={{ __html: row.service.replace(/, (1 челюсть|2 челюсти|6 единиц|2 штуки)/g, '<br/>$1') }} />
+                                            <span className='hidden md:inline'>{row.service}</span>
                                         </span>
                                     </td>
                                     <td className='px-4 py-2.5 text-right font-semibold whitespace-nowrap'>

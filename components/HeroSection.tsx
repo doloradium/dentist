@@ -22,12 +22,9 @@ export function HeroSection() {
             </div>
 
             <div className='max-w-5xl mx-auto px-4 relative z-1'>
-                <h1 className='text-3xl md:text-4xl font-bold text-center mb-4'>
+                <h1 className='text-3xl md:text-4xl font-bold text-center mb-16'>
                     Ортодонтия
                 </h1>
-                <p className='text-center text-white/60 mb-12'>
-                    Нажмите на услугу для просмотра изображения
-                </p>
                 <OrthoPrice />
             </div>
         </section>

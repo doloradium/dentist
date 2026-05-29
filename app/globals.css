@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+@source "../components";
+@source "../lib";
+
+@theme {
+    --color-primary: #3C9092;
+    --color-secondary: #ffffff;
+    --color-surface: #ffffff40;
+    --color-text: #2a2a2a;
+    --color-text-muted: #2a2a2a80;
+    --color-border: #2a2a2a20;
+    --shadow-card: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+@keyframes bounce-down {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(25%); }
+}
+
+.animate-bounce-down {
+    animation: bounce-down 1.5s ease-in-out infinite;
+}
+
+* {
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-weight: 500;
+}
+
+#special {
+    position: fixed !important;
+    bottom: 0 !important;
+    top: auto !important;
+    z-index: 50 !important;
+}
+
+h1,
+h2 {
+    font-family: var(--font-unbounded), ui-sans-serif, system-ui, sans-serif;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+}

@@ -1,0 +1,28 @@
+diff --git a/node_modules/@keystatic/core/dist/index-e205248e.js b/node_modules/@keystatic/core/dist/index-e205248e.js
+index ef3b5b9..468ceab 100644
+--- a/node_modules/@keystatic/core/dist/index-e205248e.js
++++ b/node_modules/@keystatic/core/dist/index-e205248e.js
+@@ -2310,8 +2310,9 @@ function EmptyRepo(props) {
+ }
+ 
+ function fetchLocalTree(sha) {
+-  if (treeCache.has(sha)) {
+-    return treeCache.get(sha);
++  if (sha !== 'initial' && treeCache.has(sha)) {
++    const cached = treeCache.get(sha);
++    if (cached && !(cached instanceof Promise)) return cached;
+   }
+   const promise = fetch('/api/keystatic/tree', {
+     headers: {
+diff --git a/node_modules/@keystatic/core/dist/keystatic-core-ui.js b/node_modules/@keystatic/core/dist/keystatic-core-ui.js
+index 24d4713..933e849 100644
+--- a/node_modules/@keystatic/core/dist/keystatic-core-ui.js
++++ b/node_modules/@keystatic/core/dist/keystatic-core-ui.js
+@@ -5203,6 +5203,7 @@ function CreateItemInner(props) {
+       }
+       if (await props.createItem()) {
+         const slug = getSlugFromState(collectionConfig, props.state);
++        await new Promise(r => setTimeout(r, 200));
+         router.push(`${collectionPath}/item/${encodeURIComponent(slug)}`);
+         toastQueue.positive("Entry created", {
+           timeout: 5000

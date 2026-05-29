@@ -1,0 +1,21 @@
+<svg width="292" height="140" viewBox="0 0 292 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M206 70C206 103.137 179.137 130 146 130C112.863 130 86 103.137 86 70V53C86 29.2518 66.7482 10 43 10H4C1.79086 10 0 8.20914 0 6C0 3.79086 1.79086 2 4 2H288C290.209 2 292 3.79086 292 6C292 8.20914 290.209 10 288 10H249C225.252 10 206 29.2518 206 53V70Z" fill="#5DA2A4"/>
+<foreignObject x="60" y="-16" width="172" height="172"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(18px);clip-path:url(#bgblur_0_618_6060_clip_path);height:100%;width:100%"></div></foreignObject><g filter="url(#filter0_d_618_6060)" data-figma-bg-blur-radius="36">
+<rect x="96" y="20" width="100" height="100" rx="50" fill="white" fill-opacity="0.5" shape-rendering="crispEdges"/>
+<rect x="96.5" y="20.5" width="99" height="99" rx="49.5" stroke="white" stroke-opacity="0.1" shape-rendering="crispEdges"/>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M134.243 80.4048C134.736 79.2137 135.898 78.4371 137.188 78.4371L141.438 78.4371L141.438 58.2498C141.438 55.9025 143.34 53.9998 145.687 53.9998C148.035 53.9998 149.937 55.9025 149.937 58.2498L149.937 78.4371L154.187 78.4371C155.477 78.4371 156.639 79.2137 157.132 80.4048C157.626 81.5959 157.353 82.9669 156.441 83.8785L147.941 92.3784C146.697 93.6232 144.678 93.6232 143.434 92.3784L134.934 83.8785C134.022 82.9669 133.749 81.5959 134.243 80.4048Z" fill="black"/>
+<defs>
+<filter id="filter0_d_618_6060" x="60" y="-16" width="172" height="172" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="10"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_618_6060"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_618_6060" result="shape"/>
+</filter>
+<clipPath id="bgblur_0_618_6060_clip_path" transform="translate(-60 16)"><rect x="96" y="20" width="100" height="100" rx="50"/>
+</clipPath></defs>
+</svg>

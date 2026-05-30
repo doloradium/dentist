@@ -51,7 +51,7 @@ export default function DoctorsPage() {
             </div>
 
             {/* Mobile */}
-            <div className='md:hidden'>
+            <div className='md:hidden -mx-4'>
                 <DoctorSwiper doctors={doctors} />
             </div>
         </section>
